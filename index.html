@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sklep z Koszulkami</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sklep z koszulkami</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Sklep z Koszulkami</h1>
-        <nav>
-            <a href="#products">Produkty</a>
-            <a href="#cart">Koszyk</a>
-        </nav>
+        <div class="container">
+            <h1>Sklep z koszulkami</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <main>
-        <section id="products">
-            <h2>Nasze Koszulki</h2>
-            <div class="product">
-                <img src="tshirt1.jpg" alt="Koszulka 1">
-                <h3>Koszulka 1</h3>
-                <p>Cena: 50 PLN</p>
-                <button onclick="addToCart('Koszulka 1', 50)">Dodaj do koszyka</button>
-            </div>
-            <div class="product">
-                <img src="tshirt2.jpg" alt="Koszulka 2">
-                <h3>Koszulka 2</h3>
-                <p>Cena: 60 PLN</p>
-                <button onclick="addToCart('Koszulka 2', 60)">Dodaj do koszyka</button>
-            </div>
-            <!-- Dodaj więcej produktów według potrzeb -->
-        </section>
-
-        <section id="cart">
-            <h2>Koszyk</h2>
-            <div id="cart-items"></div>
-            <p id="total-price">Całkowita cena: 0 PLN</p>
-        </section>
-    </main>
-
+    <section id="home" class="main-section">
+        <div class="container">
+            <h2>Witamy w Sklepie z Koszulkami</h2>
+            <p>...</p>
+        </div>
+    </section>
+    <section id="about" class="main-section">
+        <div class="container">
+            <h2>O nas</h2>
+            <p>...</p>
+        </div>
+    </section>
+    <section id="services" class="main-section">
+        <div class="container">
+            <h2>Nasze produkty</h2>
+            <p>...</p>
+        </div>
+    </section>
+    <section id="contact" class="main-section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się z nami przez...</p>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 Sklep z Koszulkami</p>
+        <div class="container">
+            <p>&copy; 2024 Sklep z koszulkami.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-</html>
+</html> 
